@@ -26,7 +26,7 @@ const SimpleEarthCanvas = () => {
       //   position: [-4, 3, 6],
       // }}
     >
-      <ambientLight intensity={4} />
+      <ambientLight intensity={5} />
       <Suspense fallback={null}>
           <SimpleEarth />
       </Suspense>
