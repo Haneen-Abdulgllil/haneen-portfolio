@@ -22,9 +22,7 @@ const Hero = () => {
           </p>
         </div>
       </div>
-
       <SolarSystemCanvas/>
-
 
 
       {/* <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-start items-center ms-5'>
