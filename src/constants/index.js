@@ -269,14 +269,14 @@ import {
       company: "Recoded",
       image: "https://media.licdn.com/dms/image/v2/D4D03AQEMT6CEar8poQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1672906787562?e=1733961600&v=beta&t=OBv7Hdazd5mGVVYXjexGMZJaVCLsprvUirpGqbCODwA",
     },
-    {
-      testimonial:
-        "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-      name: "Lisa Wang",
-      designation: "CTO",
-      company: "456 Enterprises",
-      image: "https://randomuser.me/api/portraits/women/6.jpg",
-    },
+    // {
+    //   testimonial:
+    //     "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
+    //   name: "Lisa Wang",
+    //   designation: "CTO",
+    //   company: "456 Enterprises",
+    //   image: "https://randomuser.me/api/portraits/women/6.jpg",
+    // },
 
     
   ];

@@ -47,7 +47,7 @@ const FeedbackCard = ({
 
           {isLongTestimonial && (
             <button onClick={handleReadMore} className='text-primary underline mt-2'>
-              Read More
+              Read More on linkedin
             </button>
           )}
 
