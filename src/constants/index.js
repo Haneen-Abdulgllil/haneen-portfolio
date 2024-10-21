@@ -48,6 +48,10 @@ import {
     //   title: "Work",
     // },
     {
+      id: "skills",
+      title: "Skills",
+    },
+    {
       id: "educations",
       title: "Educations",
     },

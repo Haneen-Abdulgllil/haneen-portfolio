@@ -1,18 +1,21 @@
 
+
 import { BrowserRouter } from "react-router-dom";
 
 import { About, Contact, Education, Feedbacks, Hero, Navbar, Tech, Works, StarsCanvas , Footer} from "./components";
 
+
+
+
 const App = () => {
   return (
     <BrowserRouter>
-      <div className='relative z-0'>
-          <div className='relative z-10'>
-            <Navbar />
-            <Hero />
-            <StarsCanvas />
-          </div>
-        {/* </div> */}
+      {/* <div className='relative z-0'> */}
+        <div className='relative z-10'>
+          <Navbar />
+          <Hero />
+          <StarsCanvas />
+        </div>
         <div className='relative z-0'>
           <About />
           <StarsCanvas />
@@ -25,7 +28,7 @@ const App = () => {
           <StarsCanvas />
           <Tech /> 
         </div> */}
-{/*         <div className='relative z-0'>
+        {/*<div className='relative z-0'>
           <Works />
           <StarsCanvas />
         </div> */}
@@ -43,8 +46,9 @@ const App = () => {
           <Footer />
           <StarsCanvas />
         </div>
-      </div>
+      {/* </div> */}
     </BrowserRouter>
+
   );
 }
 
