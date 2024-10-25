@@ -34,6 +34,7 @@
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+
 .violet-gradient {
   background: #cc6635;
   background: linear-gradient(-90deg, #cc6635 0%, rgba(60, 51, 80, 0) 100%);

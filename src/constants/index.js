@@ -357,7 +357,7 @@ import {
       ],
       image: idev,
       // source_code_link: "https://github.com/",
-      live_demo_link: "https://ywbod.org",
+      live_demo_link: "https://idev-therapist.vercel.app/",
     },
     {
       name: "ToDos App",
@@ -382,8 +382,8 @@ import {
         },
       ],
       image: todoapp,
-      // source_code_link: "https://github.com/",
-      live_demo_link: "https://ywbod.org",
+      source_code_link: "https://github.com/Haneen-Abdulgllil/todoapp.git",
+      // live_demo_link: "https://ywbod.org",
     },
     {
       name: "My portfolio",
@@ -410,7 +410,7 @@ import {
       ],
       image: portfolio,
       // source_code_link: "https://github.com/",
-      live_demo_link: "https://ywbod.org",
+      live_demo_link: "https://haneen-portfolio.vercel.app/",
     },
     {
       name: "Shopping cart",
@@ -436,29 +436,29 @@ import {
       ],
       image: redux_cart,
       // source_code_link: "https://github.com/",
-      live_demo_link: "https://ywbod.org",
+      live_demo_link: "https://cart-items-redux.vercel.app/",
     },
-    {
-      name: "Netflix landing page",
-      description:
-        "Trying to copy netflix landing page using pure css style.",
-      tags: [
-        {
-          name: "html",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "javascript",
-          color: "green-text-gradient",
-        },
-        {
-          name: "css",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: netflix,
-      source_code_link: "https://github.com/",
-    },
+    // {
+    //   name: "Netflix landing page",
+    //   description:
+    //     "Trying to copy netflix landing page using pure css style.",
+    //   tags: [
+    //     {
+    //       name: "html",
+    //       color: "blue-text-gradient",
+    //     },
+    //     {
+    //       name: "javascript",
+    //       color: "green-text-gradient",
+    //     },
+    //     {
+    //       name: "css",
+    //       color: "pink-text-gradient",
+    //     },
+    //   ],
+    //   image: netflix,
+    //   source_code_link: "https://github.com/",
+    // },
   ];
 
   const connectinfo = [
