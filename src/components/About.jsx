@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Tilt } from 'react-tilt'
 import { motion } from "framer-motion";
 
@@ -39,15 +39,24 @@ const ServiceCard = ({ index, title, icon }) => (
 );
 
 const DownloadCVButton = () => {
+  const [isDownloading, setIsDownloading] = useState(false);
+
+  const handleDownload = () => {
+    setIsDownloading(true);
+    // This timeout simulates the download process; adjust the delay as needed.
+    setTimeout(() => {
+      setIsDownloading(false);
+    }, 2000); // Resets after 2 seconds
+  };
+
   return (
     <div className="mt-10">
-      <a href="/HANEEN_RESUME.pdf" download >
+      <a href="/HANEEN_RESUME.pdf" download onClick={handleDownload}>
         <button className="download-btn bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-secondary font-bold shadow-md shadow-primary">
-          Download CV
+          {isDownloading ? "Downloading..." : "Download CV"}
         </button>
       </a>
     </div>
-
   );
 };
 
