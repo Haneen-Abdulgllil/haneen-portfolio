@@ -41,13 +41,30 @@ import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
+import busintech from "./projects/busintech.png";
+import idev from "./projects/idev.png";
+import netflix from "./projects/netflix.png";
+import portfolio from "./projects/portfolio.png";
+import redux_cart from "./projects/reduxcart.png";
+import todoapp from "./projects/todoapp.png";
+import ywbod from "./projects/ywbod.png";
+
 export {
+  busintech,
+  idev,
+  netflix,
+  portfolio,
+  redux_cart,
+  todoapp,
+  ywbod,
+
   logo,
   back,
   uiux,
   mobile,
   front,
   devops,
+
   github,
   menu,
   close,

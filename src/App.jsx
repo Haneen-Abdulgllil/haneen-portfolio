@@ -28,10 +28,10 @@ const App = () => {
           <StarsCanvas />
           <Tech /> 
         </div> */}
-        {/*<div className='relative z-0'>
+        <div className='relative z-0'>
           <Works />
           <StarsCanvas />
-        </div> */}
+        </div>
         <div className='relative z-0'>
           <Feedbacks />
           <StarsCanvas />

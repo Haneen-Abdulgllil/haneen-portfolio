@@ -115,6 +115,22 @@
   -webkit-text-fill-color: transparent;
 }
 
+.purple-text-gradient {
+  background: #9f35cc; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #9f35cc,
+    #d17df5
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #9f35cc,
+    #d17df5
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 /* canvas- styles */
 .canvas-loader {
   font-size: 10px;
@@ -202,4 +218,30 @@
       -1.8em 1.8em 0 0em rgba(255, 255, 255, 0.5),
       -2.6em 0em 0 0em rgba(255, 255, 255, 0.7), -1.8em -1.8em 0 0em #ffffff;
   }
+}
+
+.swiper-button-prev:after, .swiper-button-next:after {
+  font-size: 30px;
+  color: #cc6635;
+}
+
+/*  */
+
+.swiper-pagination-bullet {
+  background-color: #f2e6d8;
+}
+
+.swiper-pagination-fraction, .swiper-pagination-custom, .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: 0px; /* Increase this value to move the bullets lower */
+}
+
+.swiper-scrollbar-drag {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background: var(--swiper-scrollbar-drag-bg-color, rgba(0, 0, 0, 0.5));
+  border-radius: var(--swiper-scrollbar-border-radius, 10px);
+  left: 0;
+  top: 0;
+  visibility: hidden;
 }

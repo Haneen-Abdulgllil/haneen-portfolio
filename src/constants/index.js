@@ -36,6 +36,14 @@ import {
     linkedin,
     social,
 
+    busintech,
+    idev,
+    netflix,
+    portfolio,
+    redux_cart,
+    todoapp,
+    ywbod,
+
   } from "../assets";
   
   export const navLinks = [
@@ -287,68 +295,164 @@ import {
   
   const projects = [
     {
-      name: "Car Rent",
-      description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      name: "BunisTech",
+      description: "It is a plateform that gather all the freelancers in Taiz city to provide different services and present them to the customers.",
       tags: [
         {
-          name: "react",
+          name: "laravel",
           color: "blue-text-gradient",
         },
         {
-          name: "mongodb",
+          name: "Bootstrap 5",
           color: "green-text-gradient",
         },
         {
-          name: "tailwind",
+          name: "SQL",
           color: "pink-text-gradient",
         },
       ],
-      image: carrent,
+      image: busintech,
       source_code_link: "https://github.com/",
     },
     {
-      name: "Job IT",
+      name: "YWBOD",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "ntroductory site for a local organization in Yemen.",
       tags: [
         {
-          name: "react",
+          name: "laravel",
           color: "blue-text-gradient",
         },
         {
-          name: "restapi",
+          name: "Bootstrap 5",
           color: "green-text-gradient",
         },
         {
-          name: "scss",
+          name: "SQL",
           color: "pink-text-gradient",
         },
       ],
-      image: jobit,
+      image: ywbod,
       source_code_link: "https://github.com/",
     },
     {
-      name: "Trip Guide",
+      name: "Healing",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "A site to get online psychotherapy by reviewing all therapists and requesting a treatment session.",
+      tags: [
+        {
+          name: "Nextjs",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Firebase",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Tailwind",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: idev,
+      source_code_link: "https://github.com/",
+    },
+    {
+      name: "ToDos App",
+      description:
+        "a small website to create a new todo with feature of edite this todo and login system using clerk auth",
       tags: [
         {
           name: "nextjs",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
+          name: "prisma",
           color: "green-text-gradient",
         },
         {
-          name: "css",
+          name: "tailwind",
           color: "pink-text-gradient",
         },
+        {
+          name: "clerk_auth",
+          color: "purple-text-gradient",
+        },
       ],
-      image: tripguide,
+      image: todoapp,
       source_code_link: "https://github.com/",
     },
+    {
+      name: "My portfolio",
+      description:
+        "Its a personal website that showes my skills and experience with my hard work to be better.",
+      tags: [
+        {
+          name: "Reactjs",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Threejs",
+          color: "green-text-gradient",
+        },
+        {
+          name: "motion_framer",
+          color: "purple-text-gradient",
+        },
+        {
+          name: "tailwind",
+          color: "pink-text-gradient",
+        },
+       
+      ],
+      image: portfolio,
+      source_code_link: "https://github.com/",
+    },
+    {
+      name: "Shopping cart",
+      description:
+        "A simple and interactive shopping cart application built using Redux and the DummyJSON API. It allows users to browse products and add items to the cart.",
+      tags: [
+        {
+          name: "nextjs",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "tailwind",
+          color: "green-text-gradient",
+        },
+        {
+          name: "dummyjson_api",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "redux",
+          color: "purple-text-gradient",
+        },
+      ],
+      image: redux_cart,
+      source_code_link: "https://github.com/",
+    },
+    // {
+    //   name: "Netflix landing page",
+    //   description:
+    //     "Trying to copy netflix landing page using pure css style.",
+    //   tags: [
+    //     {
+    //       name: "html",
+    //       color: "blue-text-gradient",
+    //     },
+    //     {
+    //       name: "javascript",
+    //       color: "green-text-gradient",
+    //     },
+    //     {
+    //       name: "css",
+    //       color: "pink-text-gradient",
+    //     },
+    //   ],
+    //   image: netflix,
+    //   source_code_link: "https://github.com/",
+    // },
   ];
 
   const connectinfo = [
