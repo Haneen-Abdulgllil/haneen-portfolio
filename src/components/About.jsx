@@ -38,6 +38,19 @@ const ServiceCard = ({ index, title, icon }) => (
   </Tilt>
 );
 
+const DownloadCVButton = () => {
+  return (
+    <div className="mt-10">
+      <a href="/HANEEN_RESUME.pdf" download >
+        <button className="download-btn bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-secondary font-bold shadow-md shadow-primary">
+          Download CV
+        </button>
+      </a>
+    </div>
+
+  );
+};
+
 const About = () => {
   return (
     <>
@@ -51,7 +64,12 @@ const About = () => {
         className='mt-4 text-secondary text-[17px] max-w-full leading-[30px]'
       >
         I am a highly skilled Full Stack Web Developer with a robust background in both frontend and backend technologies. I have extensive experience in crafting responsive, user-friendly interfaces using HTML, CSS, Tailwind, JavaScript, ReactJS, and NextJS, as well as developing scalable backend systems with NodeJS, PHP (Laravel), and SpringBoot. My expertise also includes working with databases such as MongoDB, MySQL, and PostgreSQL, and I am proficient in TypeScript for building type-safe applications.I have hands-on experience with Docker and Kubernetes for containerization and orchestration, and I follow Agile principles to ensure efficient and collaborative development. Additionally, I am well-versed in version control using GIT and GitHub. my main focus remains on delivering high-quality web applications using modern web development stacks.
+    
       </motion.p>
+
+      <DownloadCVButton />
+
+
       <div className='mt-20 flex flex-wrap gap-10'>
       
         {services.map((service, index) => (
