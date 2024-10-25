@@ -16,10 +16,11 @@ const EducationCard = ({ education }) => {
   return (
     <VerticalTimelineElement
       contentStyle={{
-        background: "#1f1f1f",
+        // background: "#1f1f1f",
+        background: "none",
         color: "#fff",
       }}
-      contentArrowStyle={{ borderRight: "7px solid  #1f1f1f" }}
+      contentArrowStyle={{ borderRight: "7px solid  #cc6635" }}
       date={education.date}
       iconStyle={{ background: education.iconBg }}
       icon={
@@ -33,9 +34,9 @@ const EducationCard = ({ education }) => {
       }
     >
       <div>
-        <h3 className='text-white text-[24px] font-bold'>{education.title}</h3>
+        <h3 className='text-secondary text-[24px] font-bold'>{education.title}</h3>
         <p
-          className='text-secondary text-[16px] font-semibold'
+          className='text-primary text-[16px] font-semibold'
           style={{ margin: 0 }}
         >
           {education.company_name}

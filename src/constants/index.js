@@ -312,7 +312,8 @@ import {
         },
       ],
       image: busintech,
-      source_code_link: "https://github.com/",
+      // source_code_link: "https://github.com/",
+      live_demo_link: "https://www.com",
     },
     {
       name: "YWBOD",
@@ -333,7 +334,8 @@ import {
         },
       ],
       image: ywbod,
-      source_code_link: "https://github.com/",
+      // source_code_link: "https://github.com/",
+      live_demo_link: "https://ywbod.org",
     },
     {
       name: "Healing",
@@ -354,7 +356,8 @@ import {
         },
       ],
       image: idev,
-      source_code_link: "https://github.com/",
+      // source_code_link: "https://github.com/",
+      live_demo_link: "https://ywbod.org",
     },
     {
       name: "ToDos App",
@@ -379,7 +382,8 @@ import {
         },
       ],
       image: todoapp,
-      source_code_link: "https://github.com/",
+      // source_code_link: "https://github.com/",
+      live_demo_link: "https://ywbod.org",
     },
     {
       name: "My portfolio",
@@ -405,7 +409,8 @@ import {
        
       ],
       image: portfolio,
-      source_code_link: "https://github.com/",
+      // source_code_link: "https://github.com/",
+      live_demo_link: "https://ywbod.org",
     },
     {
       name: "Shopping cart",
@@ -430,29 +435,30 @@ import {
         },
       ],
       image: redux_cart,
+      // source_code_link: "https://github.com/",
+      live_demo_link: "https://ywbod.org",
+    },
+    {
+      name: "Netflix landing page",
+      description:
+        "Trying to copy netflix landing page using pure css style.",
+      tags: [
+        {
+          name: "html",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "javascript",
+          color: "green-text-gradient",
+        },
+        {
+          name: "css",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: netflix,
       source_code_link: "https://github.com/",
     },
-    // {
-    //   name: "Netflix landing page",
-    //   description:
-    //     "Trying to copy netflix landing page using pure css style.",
-    //   tags: [
-    //     {
-    //       name: "html",
-    //       color: "blue-text-gradient",
-    //     },
-    //     {
-    //       name: "javascript",
-    //       color: "green-text-gradient",
-    //     },
-    //     {
-    //       name: "css",
-    //       color: "pink-text-gradient",
-    //     },
-    //   ],
-    //   image: netflix,
-    //   source_code_link: "https://github.com/",
-    // },
   ];
 
   const connectinfo = [

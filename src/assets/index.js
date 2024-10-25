@@ -6,7 +6,9 @@ import mobile from "./mobile.png";
 import front from "./front.png";
 import devops from "./devops.png";
 
+import internet from "./internet.png";
 import github from "./github.png";
+
 import menu from "./menu.svg";
 import close from "./close.svg";
 
@@ -66,6 +68,8 @@ export {
   devops,
 
   github,
+  internet,
+
   menu,
   close,
   css,
