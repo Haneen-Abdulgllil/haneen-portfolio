@@ -104,15 +104,91 @@ import 'swiper/css/scrollbar';
 //     );
 // };
 
+// const ProjectCard = ({
+//     index,
+//     name,
+//     description,
+//     tags,
+//     image,
+//     source_code_link,
+//     live_demo_link, // Add live demo link as a prop
+//   }) => {
+//   return (
+//     <motion.div 
+//       variants={fadeIn("up", "spring", index * 0.5, 0.75)} 
+//       className=""
+//     >
+//       <Tilt
+//         options={{
+//           max: 45,
+//           scale: 1,
+//           speed: 450,
+//         }}
+//         className="p-5 rounded-2xl sm:w-[360px] w-full h-[480px]" // Set a fixed height here
+//       >
+//         <div className="relative w-full h-[230px]">
+//           <img
+//             src={image}
+//             alt="project_image"
+//             className="w-full h-full object-cover rounded-2xl border-2 border-purple-text-gradient"
+//           />
+
+//           <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
+//             {/* Conditionally render GitHub icon or Live Demo icon */}
+//             {source_code_link ? (
+//               <div
+//                 onClick={() => window.open(source_code_link, "_blank")}
+//                 className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+//               >
+//                 <img
+//                   src={github} // Replace with your GitHub icon path
+//                   alt="source code"
+//                   className="w-1/2 h-1/2 object-contain"
+//                 />
+//               </div>
+//             ) : (
+//               <div
+//                 onClick={() => window.open(live_demo_link, "_blank")} // Open live demo link
+//                 className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+//               >
+//                 <img
+//                   src={internet} // Replace with your Live Demo icon path
+//                   alt="live demo"
+//                   className="w-1/2 h-1/2 object-contain"
+//                 />
+//               </div>
+//             )}
+//           </div>
+//         </div>
+
+//         <div className="mt-5">
+//           <h3 className="text-white font-bold text-[24px]">{name}</h3>
+//           <p className="mt-2 text-secondary text-[14px] line-clamp-3">
+//             {description}
+//           </p> {/* Restrict description to 3 lines */}
+//         </div>
+
+//         <div className="mt-4 flex flex-wrap gap-2">
+//           {tags.map((tag) => (
+//             <p key={`${name}-${tag.name}`} className={`text-[14px] ${tag.color}`}>
+//               #{tag.name}
+//             </p>
+//           ))}
+//         </div>
+//       </Tilt>
+//     </motion.div>
+//   );
+// };
+
 const ProjectCard = ({
-  index,
-  name,
-  description,
-  tags,
-  image,
-  source_code_link,
-  live_demo_link, // Add live demo link as a prop
-}) => {
+    index,
+    name,
+    description,
+    tags,
+    image,
+    source_code_link,
+    live_demo_link, // Keep the live demo link prop
+  }) => {
   return (
     <motion.div 
       variants={fadeIn("up", "spring", index * 0.5, 0.75)} 
@@ -134,11 +210,11 @@ const ProjectCard = ({
           />
 
           <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
-            {/* Conditionally render GitHub icon or Live Demo icon */}
-            {source_code_link ? (
+            {/* GitHub icon */}
+            {source_code_link && (
               <div
                 onClick={() => window.open(source_code_link, "_blank")}
-                className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+                className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer mr-2" // Add margin for spacing
               >
                 <img
                   src={github} // Replace with your GitHub icon path
@@ -146,9 +222,11 @@ const ProjectCard = ({
                   className="w-1/2 h-1/2 object-contain"
                 />
               </div>
-            ) : (
+            )}
+            {/* Live Demo icon */}
+            {live_demo_link && (
               <div
-                onClick={() => window.open(live_demo_link, "_blank")} // Open live demo link
+                onClick={() => window.open(live_demo_link, "_blank")}
                 className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
               >
                 <img
@@ -179,6 +257,7 @@ const ProjectCard = ({
     </motion.div>
   );
 };
+
 const Works = () => {
   return (
     <>
