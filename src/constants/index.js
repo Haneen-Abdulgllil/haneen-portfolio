@@ -43,6 +43,7 @@ import {
     redux_cart,
     todoapp,
     ywbod,
+    womensguide,
 
   } from "../assets";
   
@@ -316,9 +317,39 @@ import {
       live_demo_link: "https://www.com",
     },
     {
+      name: "Women'sGuide",
+      description:
+        "An informative guide that helps all businesswomen obtain legal information, official procedures, financing services information, and advisory services in project management and training.",
+      tags: [
+        {
+          name: "Flutter",
+          color: "purple-text-gradient",
+        },
+        {
+          name: "laravel",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Angular",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Bootstrap 5",
+          color: "green-text-gradient",
+        },
+        {
+          name: "MySQL",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: womensguide,
+      // source_code_link: "https://github.com/",
+      live_demo_link: "https://play.google.com/store/apps/details?id=com.guide.women.gover&pli=1",
+    },
+    {
       name: "YWBOD",
       description:
-        "ntroductory site for a local organization in Yemen.",
+        "Introductory site for a local organization in Yemen.",
       tags: [
         {
           name: "laravel",
@@ -329,7 +360,7 @@ import {
           color: "green-text-gradient",
         },
         {
-          name: "SQL",
+          name: "MySQL",
           color: "pink-text-gradient",
         },
       ],

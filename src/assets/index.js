@@ -50,6 +50,8 @@ import portfolio from "./projects/portfolio.png";
 import redux_cart from "./projects/reduxcart.png";
 import todoapp from "./projects/todoapp.png";
 import ywbod from "./projects/ywbod.png";
+import womensguide from "./projects/womensguide.png";
+
 
 export {
   busintech,
@@ -59,6 +61,7 @@ export {
   redux_cart,
   todoapp,
   ywbod,
+  womensguide,
 
   logo,
   back,

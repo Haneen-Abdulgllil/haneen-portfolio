@@ -10,7 +10,7 @@ import { About, Contact, Education, Feedbacks, Hero, Navbar, Tech, Works, StarsC
 const App = () => {
   return (
     <BrowserRouter>
-      {/* <div className='relative z-0'> */}
+      <div className='relative z-0'>
         <div className='relative z-10'>
           <Navbar />
           <Hero />
@@ -24,7 +24,7 @@ const App = () => {
           <Education />
           <StarsCanvas />
         </div>
-{/*     <div className='relative z-0'>
+        {/* <div className='relative z-0'>
           <StarsCanvas />
           <Tech /> 
         </div> */}
@@ -46,11 +46,12 @@ const App = () => {
           <Footer />
           <StarsCanvas />
         </div>
-      {/* </div> */}
+      </div>
     </BrowserRouter>
 
   );
 }
 
 export default App;
+
 
