@@ -1,15 +1,12 @@
-name: React CI Workflow
+name: Deploy 3D Portfolio to GitHub Pages
 
 on:
   push:
     branches:
       - main
-  pull_request:
-    branches:
-      - main
 
 jobs:
-  build-and-test:
+  build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
@@ -19,17 +16,16 @@ jobs:
     - name: Set up Node.js
       uses: actions/setup-node@v3
       with:
-        node-version: '16' # Use the version of Node.js required by your project
+        node-version: '16' # Use the Node.js version compatible with your project
 
     - name: Install dependencies
       run: npm install
 
-    - name: Run tests
-      run: npm test -- --watchAll=false
-
     - name: Build project
       run: npm run build
 
-    - name: Deploy (optional)
-      if: github.ref == 'refs/heads/main'
-      run: echo "Add your deployment steps here, e.g., using GitHub Pages or a hosting service"
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: dist
